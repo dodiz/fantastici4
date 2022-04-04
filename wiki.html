@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Wiki</title>
+</head>
+
+<body>
+    <h1>Wiki fantastici4</h1>
+    <h2>Feature</h2>
+    <p>Nella pagina corsi.html ci siamo serviti della classe feature per e delle sue classi figlie per centrare
+        le immagini nelle due colonne.
+        In particolare abbiamo creato una classe figlia ficture picture,
+    </p>
+
+    <code>
+    <pre>
+        .feature {
+        gap: 4rem 2rem;
+        margin: 12rem 0;
+        }
+
+        .feature:nth-of-type(odd) .feature__image {}
+
+        .feature picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .feature__image {
+
+        width: 300px;
+
+        }
+
+
+        .feature:first-of-type {
+        margin-top: 6rem;
+        }
+
+        .feature__heading {
+        margin: 1rem 0;
+        }
+    </pre>
+    </code>
+
+    <h2>paragrafi a tendina</h2>
+
+    <code>
+        <pre>
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+                award-winning fireworks and seasonal special events.</p>
+            </details>
+        </pre>
+    </code>
+
+</body>
+
+</html>
