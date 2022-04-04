@@ -30,6 +30,8 @@ html {
 
 img {
   width: 100%;
+
+
 }
 
 body {
@@ -807,6 +809,21 @@ a {
   gap: 4rem 2rem;
   margin: 12rem 0;
 }
+
+.feature:nth-of-type(odd) .feature__image {}
+
+.feature picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature__image {
+
+  width: 300px;
+
+}
+
 
 .feature:first-of-type {
   margin-top: 6rem;
