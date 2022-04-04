@@ -64,6 +64,7 @@ h3 {
 }
 
 p {
+  color: #000;
   margin-top: 0;
 }
 
@@ -948,4 +949,8 @@ a {
 .h1_smaller {
   font-size: 4rem;
 
+}
+
+.text_black {
+  color: #000;
 }
