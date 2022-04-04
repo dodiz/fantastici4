@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9b25f3ad.css",
+    "main.js": "/static/js/main.f164bac0.js",
+    "static/media/wild.mp3": "/static/media/wild.c2dec6157e742e0cb3f1.mp3",
+    "static/media/hedrick.png": "/static/media/hedrick.8ffbffc18163a203608c.png",
+    "static/media/pokeball.png": "/static/media/pokeball.774abbafa8d08b174185.png",
+    "static/media/giuseppe.png": "/static/media/giuseppe.594a2ff31263aa1e7bf3.png",
+    "static/media/captured.mp3": "/static/media/captured.66082054a38d9e388b1f.mp3",
+    "static/media/donato.png": "/static/media/donato.a7f15127aa5ea41210a7.png",
+    "static/media/simone.png": "/static/media/simone.c2d2bba1f596f07b13a9.png",
+    "static/media/trainer.png": "/static/media/trainer.cae9258e73a0f5174ed5.png",
+    "static/media/pokeball.mp3": "/static/media/pokeball.8a4c4c98158fdad0fc03.mp3",
+    "index.html": "/index.html",
+    "main.9b25f3ad.css.map": "/static/css/main.9b25f3ad.css.map",
+    "main.f164bac0.js.map": "/static/js/main.f164bac0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b25f3ad.css",
+    "static/js/main.f164bac0.js"
+  ]
+}
