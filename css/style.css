@@ -954,3 +954,7 @@ a {
 .text_black {
   color: #000;
 }
+
+details{
+  color: black;
+}
