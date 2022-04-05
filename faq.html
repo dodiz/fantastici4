@@ -21,34 +21,18 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="./js/jquery.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("./components/header.html");
+        });
+    </script>
+
 </head>
 
 <body>
-    <header>
-        <nav class="nav collapsible" style="background-color:#E7717D; ">
-            <a aria-label="Moshify" class="nav__brand" href="./index.html"><img src="images/logoGen.png" alt=""
-                    width="1px" /></a>
-            <svg class="icon icon--white nav__toggler">
-                <use href="images/sprite.svg#menu"></use>
-            </svg>
-            <ul class=" list nav__list collapsible__content">
-                <li class="nav__item" style="color:black;">
-                    <a style="color:black;" href="./index.html"><strong>Homepage</strong></a>
-                </li>
-                <li class="nav__item" style="color:black;">
-                    <a style="color:black;" href="./corsi.html"><strong>Corsi</strong></a>
-                </li>
-                <li class="nav__item">
-                    <a style="color:black;" href="./aziende.html"><strong>Aziende</strong></a>
-                </li>
-                <li class="nav__item" style="color:black;">
-                    <a style="color:black;" target=" _blank" href="./dodiz"><strong>Gotta catch 'em all</strong></a>
-                </li>
-
-
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
     <section class="block block--dark block--skewed-left hero" style="background-color:#C2CAD0; ">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
