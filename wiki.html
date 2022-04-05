@@ -2,47 +2,28 @@
 
 <head>
     <title>Wiki</title>
+    <style>
+        .displayImgCenter {
+            display: block;
+            width: 450px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: bisque;">
     <h1>Wiki fantastici4</h1>
     <h2>Feature</h2>
-    <p>Nella pagina corsi.html ci siamo serviti della classe feature per e delle sue classi figlie per centrare
+    <p>Nella pagina corsi.html ci siamo serviti della classe feature delle sue classi figlie per centrare
         le immagini nelle due colonne.
-        In particolare abbiamo creato una classe figlia ficture picture,
+        In particolare abbiamo utilizzato la proprietà display ed il suo valore flex per gestire il contenuto come
+        contenuto flessibile. Così da poter utilizzare
+        le proprietà align-items e justify-content per centrarle sia sulle righe che sulle colonne.
     </p>
 
-    <code>
-    <pre>
-        .feature {
-        gap: 4rem 2rem;
-        margin: 12rem 0;
-        }
-
-        .feature:nth-of-type(odd) .feature__image {}
-
-        .feature picture {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-
-        .feature__image {
-
-        width: 300px;
-
-        }
-
-
-        .feature:first-of-type {
-        margin-top: 6rem;
-        }
-
-        .feature__heading {
-        margin: 1rem 0;
-        }
-    </pre>
-    </code>
+    <div class="feature__image">
+        <img class="displayImgCenter" src="./images/codeFeature.png" alt="immagine rappresentativa delle feature">
+    </div>
 
     <h2>paragrafi a tendina</h2>
 
@@ -54,7 +35,8 @@
                 award-winning fireworks and seasonal special events.</p>
             </details>
         </pre>
-    </code>
+    
+        
 
 </body>
 
