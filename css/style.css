@@ -995,6 +995,12 @@ details {
   color: black;
 }
 
-summary:hover{
-  color:#00d9ff
+summary:hover {
+  color: #00d9ff
+}
+
+.displayImgCenter {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
 }
