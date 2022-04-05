@@ -11,12 +11,11 @@
 
 -   HTML
 -   CSS
--   JS
+-   Javascript
 
 ##  Ringraziamo
 
 - Noi stessi
-- I nostri superpoteri
-- Il Normalize.css
 - Il template Moshify
 - Il Cookie Notice Js di Alessandro Benoit
+- Libreria AOS: https://michalsnik.github.io/aos/ 
