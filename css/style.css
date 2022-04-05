@@ -647,17 +647,21 @@ a {
 
 .block__heading {
   margin-top: 0;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .block--dark {
-  background: #000;
+  background: #ffd8d3;
   color: #7b858b;
 }
 
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
-  color: #fff;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgb(40, 36, 36);
 }
 
 .block--skewed-right {
@@ -678,7 +682,11 @@ a {
 /* Navigation Bar */
 
 .nav {
-  background: #E7717D;
+  background: #ff3a4d6c;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
