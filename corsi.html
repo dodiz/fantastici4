@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Deploy your websites in less than 60 seconds." />
-    <meta property="og:title" content="Moshify - Deploy your websites in less than 60 seconds." />
+    <meta name="description" content="I fantastici 4 - Visualizza cose completamente inutili!" />
+    <meta property="og:title" content="I fantastici 4 - Visualizza cose completamente inutili!" />
     <meta property="og:description"
-        content="Moshify is an imginary cloud hosting company. It's designed to teach people how to build modern websites using HTML5 and CSS3. To learn how to build this website from scratch, get the Ultimate HTML and CSS course on codewithmosh.com." />
+        content="I fantastici 4 è un sito di valutazione capacità e competenze ed un antani sbirigandolato" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://moshified.com/moshify.jpg" />
-    <meta property="og:url" content="http://moshified.com" />
-    <title>Generation Italy - corsi</title>
+    <meta property="og:url" content="https://dodiz.github.io/fantastici4" />
+
+    <title>Corsi</title>
+
     <link rel="icon" href="images/logoGen.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logoGen.jpg" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/logoGen.jpg" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://kit.fontawesome.com/da0268a496.js" crossorigin="anonymous"></script>
 
     <script src="./js/jquery.js"></script>
     <script>
         $(function () {
             $("#header").load("./components/header.html");
+            $("#footer").load("./components/footer.html");
         });
     </script>
 
@@ -33,23 +40,13 @@
 
 <body>
     <div id="header"></div>
-    <section class="block block--dark block--skewed-left hero" style="background-color:#C2CAD0; ">
+    <section class="block block--dark block--skewed-left hero f-header f-header--courses">
         <div class="container grid grid--1x2">
-            <header class="block__header hero__content">
-                <h1 data-aos="zoom-in-up" class="block__heading" style="color: black">
+            <header data-aos="zoom-in-up" class="block__header hero__content">
+                <h1 class="block__heading">
                     I nostri corsi
                 </h1>
-                <!-- <p class="hero__tagline">
-                    Deploy your websites in less than 60 seconds.
-                </p>
-                 <a target="_blank" href="https://codewithmosh.com" class="btn btn--accent btn--stretched">Get
-                    Started</a>-->
             </header>
-            <picture data-aos="zoom-in">
-                <source type="image/webp" srcset="images/OIP.jpg 1x, images/OIP.jpg 2x" />
-                <source type="image/png" srcset="images/OIP.jpg 1x, images/OIP.jpg 2x" />
-                <img class="hero__image" src="images/OIP.jpg" alt="" />
-            </picture>
         </div>
     </section>
     <section data-aos="zoom-in-up" class="block container block-domain">
@@ -60,384 +57,106 @@
                 azienda!
             </p>
         </header>
-        <!--  <div class="input-group">
-            <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here..." />
-            <button class="btn btn--accent">
-                <svg class="icon icon--white">
-                    <use href="images/sprite.svg#search"></use>
-                </svg>Search
-            </button>
-        </div>
-        <ul class="list block-domain__prices">
-            <li><span class="badge badge--secondary">.com $9</span></li>
-            <li>.sg $10</li>
-            <li>.space $11</li>
-            <li>.info $14</li>
-            <li>.net $10</li>
-            <li>.xyz $10</li>
-        </ul>
-    </section>-->
-        <section data-aos="fade-up" class="block container block-plans">
-            <div class="grid grid--1x3">
-                <div class="plan">
-                    <div class="card card--secondary">
-                        <header class="card__header" style="background-color:#f8a5ad">
-                            <h3 class="plan__name">Gratuito</h3>
-                            <span style="font-size: 35px;" class="plan__price">Addetto alle vendite</span>
-                            <!--<span class="plan__billing-cycle">/month</span>
-                            <span class="badge badge--secondary badge--small">10% OFF</span>
-                            <span class="plan__description">Easy start on the cloud</span>-->
-                        </header>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Milano</li>
-                                <li class="list__item">Torino</li>
-                                <li class="list__item">Torre Annunziata</li>
-                                <li class="list__item">Palermo</li>
-                            </ul>
-                            <a href="https://italy.generation.org/addetto-alle-vendite/#apply"> <button
-                                    class="btn btn--outline btn--block">Candidati ora</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="plan plan--popular">
-                    <div class="card card--primary">
-                        <header class="card__header" style="background-color:#E7717D">
-                            <h3 class="plan__name">Gratuito</h3>
-                            <span style="font-size: 35px;" class="plan__price">Sviluppatore Java</span>
-                            <!--<span class="plan__billing-cycle">/month</span>
-                            <span class="badge badge--primary badge--small">10% OFF</span>
-                            <span class="plan__description">Easy start on the cloud</span>-->
-                        </header>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Milano</li>
-                                <li class="list__item">Roma</li>
-                                <li class="list__item">Napoli</li>
-                                <li class="list__item">Trieste</li>
-                            </ul>
-                            <a href="https://italy.generation.org/sviluppatore-java/#apply"><button
-                                    class="btn btn--outline btn--block">Candidati ora</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="plan">
-                    <div class="card card--secondary">
-                        <header class="card__header" style="background-color:#f8a5ad">
-                            <h3 class="plan__name">Gratuito</h3>
-                            <span style="font-size: 25px;" class="plan__price">Sviluppatore Software Salesforce</span>
-                            <!-- <span class="plan__billing-cycle">/month</span>
-                            <span class="badge badge--secondary badge--small">10% OFF</span>
-                            <span class="plan__description">Easy start on the cloud</span>-->
-                        </header>
-                        <div class="card__body">
-                            <ul class="list list--tick">
-                                <li class="list__item">Milano</li>
-                                <li class="list__item">Roma</li>
-                                <li class="list__item">Cagliari</li>
-                                <li class="list__item">Bologna</li>
-                            </ul>
-                            <a href="https://italy.generation.org/sviluppatore-salesforce/#apply"> <button
-                                    class="btn btn--outline btn--block">Candidati ora</button></a>
-                        </div>
+    </section>
+    <section data-aos="fade-up" class="block container block-plans">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header" style="background-color:#f8a5ad">
+                        <h3 class="plan__name">Gratuito</h3>
+                        <span style="font-size: 35px;" class="plan__price">Addetto alle vendite</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Milano</li>
+                            <li class="list__item">Torino</li>
+                            <li class="list__item">Torre Annunziata</li>
+                            <li class="list__item">Palermo</li>
+                        </ul>
+                        <a href="https://italy.generation.org/addetto-alle-vendite/#apply"> <button
+                                class="btn btn--outline btn--block">Candidati ora</button></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="block container">
-            <header class="block__header">
-                <h2>I diplomati generation assunti in azienda aggiungono valore dal primo giorno
-                </h2>
-                <p>
-                    In Italia, sono 600 mila le posizioni di lavoro difficili da coprire per le aziende. Generation
-                    seleziona, forma e prepara nuovi candidati che possono creare valore dal primo giorno. Inoltre,
-                    Generation collabora con i datori di lavoro per personalizzare i programmi formativi sulla base
-                    delle loro specifiche necessità.
-                </p>
-            </header>
-            <article class="grid grid--1x2 feature">
-                <div class="feature__content" data-aos="fade-right">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use href="images/sprite.svg#easy"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Generation Italy: Il ponte tra aziende
-                        e giovani alla ricerca di opportunità
-                    </h3>
-                    <p>
-                        Generation Italy ha offerto formazione gratuita a oltre 1.200 ragazzi e ragazze, sostenendo il
-                        loro inserimento nel mercato del lavoro. L’80% delle aziende partner della rete Generation
-                        reputa alto il livello di preparazione delle risorse loro presentate al termine dei corsi.
-                    </p>
-                    <a href="https://vimeo.com/349092709?embedded=true&source=video_title&owner=32315808"
-                        target="_blank" class="link-arrow">Guarda
-                        questo video</a>
-                </div>
-                <picture data-aos="zoom-in-left">
-                    <source type="image/webp" srcset="images/OIP.jpg 1x, images/OIP.jpg 2x" />
-                    <source type="image/jpg" srcset="images/OIP.jpg 1x, images/OIP.jpg 2x" />
-                    <img class="feature__image" src="images/OIP.jpg" alt="" />
-                </picture>
-            </article>
-            <!--  <article class="grid grid--1x2 feature">
-                <div class="feature__content" data-aos="fade-up">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use href="images/sprite.svg#computer"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Simply Fast Websites</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-                    </p>
-                    <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>
-                </div>
-                <picture>
-                    <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x" />
-                    <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x" />
-                    <img class="feature__image" src="images/fast@2x.jpg" alt="" />
-                </picture>
-            </article>
-            <article class="grid grid--1x2 feature">
-                <div class="feature__content" data-aos="fade-up">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use href="images/sprite.svg#wordpress"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">Wordpress Made Easy</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-                    </p>
-                    <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>
-                </div>
-                <picture>
-                    <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x" />
-                    <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x" />
-                    <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
-                </picture>
-            </article>
-            <article class="grid grid--1x2 feature">
-                <div class="feature__content" data-aos="fade-left">
-                    <span class="icon-container">
-                        <svg class="icon icon--primary">
-                            <use href="images/sprite.svg#clock"></use>
-                        </svg>
-                    </span>
-                    <h3 class="feature__heading">24/7 Expert Support</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                        obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-                    </p>
-                    <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>
-                </div>
-                <picture data-aos="fade-right">
-                    <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x" />
-                    <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x" />
-                    <img class="feature__image" src="images/support@2x.jpg" alt="" />
-                </picture>
-            </article>
-        </section>
-        <section class="block block--dark block--skewed-right block-showcase">
-            <header class="block__header">
-                <h2>User-friendly Control Panel</h2>
-            </header>
-            <div class="container grid grid--1x2">
-                <picture data-aos="fade-right" class="block-showcase__image">
-                    <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
-                    <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
-                    <img src="images/ipad.png" alt="" />
-                </picture>
-                <ul class="list" data-aos="fade-up">
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use href="images/sprite.svg#snap"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Easy Start & Managed Updates</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                                    vel perspiciatis consequuntur ab.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use href="images/sprite.svg#growth"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                                    vel perspiciatis consequuntur ab.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use href="images/sprite.svg#wordpress"></use>
-                                </svg>
-                            </div>
-                            <div class="media__body">
-                                <h3 class="media__title">Dynamic Caching & More</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                                    vel perspiciatis consequuntur ab.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="block" data-aos="zoom-in">
-            <header class="block__header">
-                <h2>What our Customers are Saying</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.
-                </p>
-            </header>
-            <div class="container">
-                <div class="card testimonial">
-                    <div class="grid grid--1x2">
-                        <div class="testimonial__image">
-                            <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-                            <span class="icon-container icon-container--accent">
-                                <svg class="icon icon--white icon--small">
-                                    <use href="images/sprite.svg#quotes"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <blockquote class="quote">
-                            <p class="quote__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Incidunt optio officiis dolore earum error eaque perferendis
-                                laudantium sed praesentium dolorum.
-                            </p>
-                            <footer>
-                                <div class="media">
-                                    <div class="media__image">
-                                        <svg class="icon icon--primary quote__line">
-                                            <use href="images/sprite.svg#line"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title quote__author">John Smith</h3>
-                                        <p class="quote__organization">ABC Company</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </blockquote>
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header" style="background-color:#E7717D">
+                        <h3 class="plan__name">Gratuito</h3>
+                        <span style="font-size: 35px;" class="plan__price">Sviluppatore Java</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Milano</li>
+                            <li class="list__item">Roma</li>
+                            <li class="list__item">Napoli</li>
+                            <li class="list__item">Trieste</li>
+                        </ul>
+                        <a href="https://italy.generation.org/sviluppatore-java/#apply"><button
+                                class="btn btn--outline btn--block">Candidati ora</button></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="container">
-            <div class="callout callout--primary callout-signup">
-                <div class="grid grid--1x2">
-                    <div class="callout__content">
-                        <h2 class="callout__heading">Ready to Get Started?</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-                            voluptate tempora qui distinctio consequatur aliquid pariatur
-                            cupiditate quas cum fugit.
-                        </p>
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header" style="background-color:#f8a5ad">
+                        <h3 class="plan__name">Gratuito</h3>
+                        <span style="font-size: 25px;" class="plan__price">Sviluppatore Software Salesforce</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Milano</li>
+                            <li class="list__item">Roma</li>
+                            <li class="list__item">Cagliari</li>
+                            <li class="list__item">Bologna</li>
+                        </ul>
+                        <a href="https://italy.generation.org/sviluppatore-salesforce/#apply"> <button
+                                class="btn btn--outline btn--block">Candidati ora</button></a>
                     </div>
-                    <a target="_blank" href="https://codewithmosh.com" class="btn btn--secondary btn--stretched">Get
-                        Started</a>
                 </div>
             </div>
         </div>
-
-        <footer class="block block--dark footer">
-            <div class="container grid footer__sections">
-                <section class="collapsible collapsible--expanded footer__section">
-                    <div class="collapsible__header">
-                        <h2 class="collapsible__heading footer__heading">Products</h2>
-                        <svg class="icon icon--white collapsible__chevron">
-                            <use href="images/sprite.svg#chevron"></use>
-                        </svg>
-                    </div>
-                    <div class="collapsible__content">
-                        <ul class="list">
-                            <li><a href="#">Website Hosting</a></li>
-                            <li><a href="#">Free Automated Wordpress</a></li>
-                            <li><a href="#">Migrations</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                        <h2 class="collapsible__heading footer__heading">Company</h2>
-                        <svg class="icon icon--white collapsible__chevron">
-                            <use href="images/sprite.svg#chevron"></use>
-                        </svg>
-                    </div>
-                    <div class="collapsible__content">
-                        <ul class="list">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                        <h2 class="collapsible__heading footer__heading">Support</h2>
-                        <svg class="icon icon--white collapsible__chevron">
-                            <use href="images/sprite.svg#chevron"></use>
-                        </svg>
-                    </div>
-                    <div class="collapsible__content">
-                        <ul class="list">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Knowledge Base</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                        <h2 class="collapsible__heading footer__heading">Domains</h2>
-                        <svg class="icon icon--white collapsible__chevron">
-                            <use href="images/sprite.svg#chevron"></use>
-                        </svg>
-                    </div>
-                    <div class="collapsible__content">
-                        <ul class="list">
-                            <li><a href="#">Domain Checker</a></li>
-                            <li><a href="#">Domain Transfer</a></li>
-                            <li><a href="#">Free Domain</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="footer__brand">
-                    <img src="images/logo.svg" alt="" />
-                    <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
-                </div>
-            </div>-->
-            </footer>
-            <script src="js/main.js"></script>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
+    </section>
+    <section class="block container">
+        <header class="block__header">
+            <h2>I diplomati generation assunti in azienda aggiungono valore dal primo giorno
+            </h2>
+            <p>
+                In Italia, sono 600 mila le posizioni di lavoro difficili da coprire per le aziende. Generation
+                seleziona, forma e prepara nuovi candidati che possono creare valore dal primo giorno. Inoltre,
+                Generation collabora con i datori di lavoro per personalizzare i programmi formativi sulla base
+                delle loro specifiche necessità.
+            </p>
+        </header>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#easy"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Generation Italy: Il ponte tra aziende
+                    e giovani alla ricerca di opportunità
+                </h3>
+                <p>
+                    Generation Italy ha offerto formazione gratuita a oltre 1.200 ragazzi e ragazze, sostenendo il
+                    loro inserimento nel mercato del lavoro. L’80% delle aziende partner della rete Generation
+                    reputa alto il livello di preparazione delle risorse loro presentate al termine dei corsi.
+                </p>
+                <a href="https://vimeo.com/349092709?embedded=true&source=video_title&owner=32315808" target="_blank"
+                    class="link-arrow">Guarda
+                    questo video</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <img class="feature__image" src="images/OIP.jpg" alt="" />
+            </picture>
+        </article>
+    </section>
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
