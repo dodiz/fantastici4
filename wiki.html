@@ -1,9 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Wiki</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Deploy your websites in less than 60 seconds." />
+    <meta property="og:title" content="Moshify - Deploy your websites in less than 60 seconds." />
+    <meta property="og:description"
+        content="Moshify is an imginary cloud hosting company. It's designed to teach people how to build modern websites using HTML5 and CSS3. To learn how to build this website from scratch, get the Ultimate HTML and CSS course on codewithmosh.com." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://moshified.com/moshify.jpg" />
+    <meta property="og:url" content="http://moshified.com" />
+    <title>Generation Italy - aziende</title>
+    <link rel="icon" href="images/logoGen.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
     <script src="./js/jquery.js"></script>
     <script>
         $(function () {
@@ -11,65 +31,135 @@
         });
     </script>
 </head>
-<div id="header"></div>
 
-<body style="background-color: bisque;">
-    <br>
-    <br>
-    <br>
-    <h1>Wiki fantastici4</h1>
-    <h2>Template utilizzato</h2>
-    <p>La scelta del template è ricaduta su quello di Moshify. Lo abbiamo trovato molto utile ed intuitivo, in
-        particolare abbiamo
-        apprezzato l'organizzazione in colonne con l'apposita classe feature che di seguito illustreremo, ed i div sulla
-        stessa linea rappresentanti
-        tre "contenitori" che abbiamo utilizzato più volte nelle pagine a seconda delle nostre necessità. (aggiunto
-        bottoni, cambiato colore di sfondo ecc...)
-    <p>Il css riguardante tali "contenitori" è organizzato essenzialmente nella classe .card e le se sue sottoclassi,
-        che modificano
-        le dimensioni della box, ed il design. Di seguito i codici HTML e CSS.
-    </p>
-    <div style="width: 700px;" class="displayImgCenter">
-        <img src="./images/cardHtml.png" alt="immagine rappresentativa del menù a tendina">
+<body>
+    <div id="header"></div>
+    <section class="block block--dark block--skewed-left hero"
+        style="background-color:#C2CAD0; margin:0 auto; padding-top:150px;">
+        <div class="container grid grid--1x2" style="display: block; background-color:#C2CAD0; margin:0 auto; ">
+            <header class="block__header hero__content; margin:0 auto;">
+
+                <h1 data-aos="zoom-in-up" class="block__heading h1_smaller" style="color: black">
+                    WIKI FANTASTICI4
+                </h1>
+
+                <br>
+
+            </header>
+
+        </div>
+    </section>
+
+    <section class="block container">
+        <header class="block__header">
+
+        </header>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-right">
+                <!--   <span class="icon-container">
+                   <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#easy"></use>
+                    </svg>-->
+                </span>
+                <h3 class="feature__heading">Template utilizzato</h3>
+                <p>
+                    La scelta del template è ricaduta su quello di Moshify. Lo abbiamo trovato molto utile ed intuitivo,
+                    in
+                    particolare abbiamo
+                    apprezzato l'organizzazione in colonne con l'apposita classe feature che di seguito illustreremo, ed
+                    i div sulla
+                    stessa linea rappresentanti
+                    tre "contenitori" che abbiamo utilizzato più volte nelle pagine a seconda delle nostre necessità.
+                    (aggiunto
+                    bottoni, cambiato colore di sfondo ecc...)
+                </p>
+                <p>Il css riguardante tali "contenitori" è organizzato essenzialmente nella classe .card e le se sue
+                    sottoclassi,
+                    che modificano
+                    le dimensioni della box, ed il design. Di seguito i codici HTML e CSS.
+                    <!-- <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
+            </div>
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/cardHtml.png 1x, images/cardHtml.png 2x" />
+                <source type="image/jpg" srcset="images/cardHtml.png 1x, images/images/cardHtml.png 2x" />
+                <img style="width: 900;" src="images/cardHtml.png" alt="" />
+            </picture>
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/cardCSS.png 1x, images/cardCSS.png 2x" />
+                <source type="image/jpg" srcset="images/cardCSS.png 1x, images/images/cardCSS.png 2x" />
+                <img class="feature__image" src="images/cardCSS.png" alt="" />
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-up">
+                <!-- <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#computer"></use>
+                    </svg>
+                </span>-->
+                <h3 class="feature__heading">Feature</h3>
+                <p>
+                    Nelle pagine corsi.html e faq.html ci siamo serviti della classe feature e delle sue classi figlie
+                    per centrare
+                    le immagini nelle due colonne.
+                    In particolare abbiamo utilizzato la proprietà display ed il suo valore flex per gestire il
+                    contenuto come
+                    contenuto flessibile, così da poter utilizzare
+                    le proprietà align-items e justify-content per centrarle sia sulle righe che sulle colonne.
+                </p>
+                <!--  <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
+            </div>
+            <picture>
+                <source type="image/webp" srcset="images/codeFeature.png 1x, images/fast@2x.webp 2x" />
+                <source type="image/jpg" srcset="images/codeFeature.png 1x, images/fast@2x.jpg 2x" />
+                <img class="feature__image" src="images/codeFeature.png" alt="" />
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-up">
+                <!-- <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#wordpress"></use>
+                    </svg>
+                </span>-->
+                <h3 class="feature__heading">Paragrafi a tendina</h3>
+                <p>
+                    Nella pagina Faq ci siamo serviti dei paragrafi a tendina per racchiudere le risposte all'interno
+                    delle domande
+                    per massimizzare lo spazio utilizzato all'interno della pagina stessa.
+                    Il primo tag utilizzato per questa operazione è <em>details</em> e al suo interno per distinguere il
+                    contenuto
+                    della tendina si utilizza il tag <em>summary</em> </p>
+                </p>
+                <!-- <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
+            </div>
+            <picture>
+                <source type="image/webp" srcset="images/Details.png 1x, images/wordpress@2x.webp 2x" />
+                <source type="image/jpg" srcset="images/Details.png 1x, images/wordpress@2x.jpg 2x" />
+                <img class="feature__image" src="images/Details.png" alt="" />
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-left">
+                <!--  <span class="icon-container">
+                    <svg class="icon icon--primary">
+                           <use href="images/sprite.svg#clock"></use>-->
+                </svg>
+                </span>
+
+
+    </section>
+    <div class="footer__brand">
+        <img src="images/OIP.jpg" alt="" />
+        <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
     </div>
-    <div class="displayImgCenter">
-        <img class="displayImgCenter" src="./images/cardCSS.png" alt="immagine rappresentativa del menù a tendina">
     </div>
-
-
-    <br>
-    <h2>Feature</h2>
-    <p>Nelle pagine corsi.html e faq.html ci siamo serviti della classe feature e delle sue classi figlie per centrare
-        le immagini nelle due colonne.
-        In particolare abbiamo utilizzato la proprietà display ed il suo valore flex per gestire il contenuto come
-        contenuto flessibile, così da poter utilizzare
-        le proprietà align-items e justify-content per centrarle sia sulle righe che sulle colonne.
-    </p>
-
-    <div class="displayImgCenter">
-        <img class="displayImgCenter" src="./images/codeFeature.png" alt="immagine rappresentativa delle feature">
-    </div>
-
-    <h2>Paragrafi a tendina</h2>
-    <p>Nella pagina Faq ci siamo serviti dei paragrafi a tendina per racchiudere le risposte all'interno delle domande
-        per massimizzare lo spazio utilizzato all'interno della pagina stessa.
-        Il primo tag utilizzato per questa operazione è <em>details</em> e al suo interno per distinguere il contenuto
-        della tendina si utilizza il tag <em>summary</em> </p>
-    <div class="displayImgCenter">
-        <img class="displayImgCenter" src="./images/Details.png" alt="immagine rappresentativa del menù a tendina">
-    </div>
-    <h2>Cookies</h2>
-    <p>Nella pagina index.html abbiamo incorporato dei cookies come accettazione dei termini per la fruizone corretta
-        del
-        sito.
-        Il codice utilizzato è stato creato da Alessandro Benoit e lo potete comodamente trovare al seguente
-        <a href="https://www.cssscript.com/creating-cookie-notification-with-vanilla-javascript-cookienoticejs/
-               ">link</a>
-    </p>
-
-
-
-
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
