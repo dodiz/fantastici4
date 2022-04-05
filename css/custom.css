@@ -9,12 +9,23 @@
     min-height: 90vh;
 }
 
+.f-header--courses {
+    min-height: 50vh;
+    background: url("../images/courses.jpg");
+    background-position: center center;
+}
+
 .f-header .hero__content {
     align-self: center;
     margin-top: -15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.f-header--courses .hero__content {
+    align-self: center;
+    margin-top: 0;
 }
 
 .f-header a {
