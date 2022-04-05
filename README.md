@@ -11,8 +11,12 @@
 
 -   HTML
 -   CSS
+-   JS
 
 ##  Ringraziamo
 
 - Noi stessi
 - I nostri superpoteri
+- Il Normalize.css
+- Il template Moshify
+- Il Cookie Notice Js di Alessandro Benoit
