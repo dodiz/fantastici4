@@ -4,32 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Deploy your websites in less than 60 seconds." />
-    <meta property="og:title" content="Moshify - Deploy your websites in less than 60 seconds." />
+    <meta name="description" content="I fantastici 4 - Visualizza cose completamente inutili!" />
+    <meta property="og:title" content="I fantastici 4 - Visualizza cose completamente inutili!" />
     <meta property="og:description"
-        content="Moshify is an imginary cloud hosting company. It's designed to teach people how to build modern websites using HTML5 and CSS3. To learn how to build this website from scratch, get the Ultimate HTML and CSS course on codewithmosh.com." />
+        content="I fantastici 4 è un sito di valutazione capacità e competenze ed un antani sbirigandolato" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="http://moshified.com/moshify.jpg" />
-    <meta property="og:url" content="http://moshified.com" />
-    <title>Generation Italy - aziende</title>
+    <meta property="og:url" content="https://dodiz.github.io/fantastici4" />
+
+    <title>Wiki</title>
+
     <link rel="icon" href="images/logoGen.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logoGen.jpg" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/logoGen.jpg" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/da0268a496.js" crossorigin="anonymous"></script>
 
     <script src="./js/jquery.js"></script>
     <script>
         $(function () {
             $("#header").load("./components/header.html");
+            $("#footer").load("./components/footer.html");
         });
     </script>
+
 </head>
 
 <body>
@@ -56,10 +62,6 @@
         </header>
         <article class="grid grid--1x2 feature">
             <div class="feature__content" data-aos="fade-right">
-                <!--   <span class="icon-container">
-                   <svg class="icon icon--primary">
-                        <use href="images/sprite.svg#easy"></use>
-                    </svg>-->
                 </span>
                 <h3 class="feature__heading">Template utilizzato</h3>
                 <p>
@@ -77,7 +79,6 @@
                     sottoclassi,
                     che modificano
                     le dimensioni della box, ed il design. Di seguito i codici HTML e CSS.
-                    <!-- <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
             </div>
             <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="images/cardHtml.png 1x, images/cardHtml.png 2x" />
@@ -92,11 +93,6 @@
         </article>
         <article class="grid grid--1x2 feature">
             <div class="feature__content" data-aos="fade-up">
-                <!-- <span class="icon-container">
-                    <svg class="icon icon--primary">
-                        <use href="images/sprite.svg#computer"></use>
-                    </svg>
-                </span>-->
                 <h3 class="feature__heading">Feature</h3>
                 <p>
                     Nelle pagine corsi.html e faq.html ci siamo serviti della classe feature e delle sue classi figlie
@@ -107,7 +103,6 @@
                     contenuto flessibile, così da poter utilizzare
                     le proprietà align-items e justify-content per centrarle sia sulle righe che sulle colonne.
                 </p>
-                <!--  <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
             </div>
             <picture>
                 <source type="image/webp" srcset="images/codeFeature.png 1x, images/fast@2x.webp 2x" />
@@ -117,11 +112,6 @@
         </article>
         <article class="grid grid--1x2 feature">
             <div class="feature__content" data-aos="fade-up">
-                <!-- <span class="icon-container">
-                    <svg class="icon icon--primary">
-                        <use href="images/sprite.svg#wordpress"></use>
-                    </svg>
-                </span>-->
                 <h3 class="feature__heading">Paragrafi a tendina</h3>
                 <p>
                     Nella pagina Faq ci siamo serviti dei paragrafi a tendina per racchiudere le risposte all'interno
@@ -131,7 +121,6 @@
                     contenuto
                     della tendina si utilizza il tag <em>summary</em> </p>
                 </p>
-                <!-- <a href="https://codewithmosh.com" target="_blank" class="link-arrow">Learn More</a>-->
             </div>
             <picture>
                 <source type="image/webp" srcset="images/Details.png 1x, images/wordpress@2x.webp 2x" />
@@ -139,22 +128,8 @@
                 <img class="feature__image" src="images/Details.png" alt="" />
             </picture>
         </article>
-        <article class="grid grid--1x2 feature">
-            <div class="feature__content" data-aos="fade-left">
-                <!--  <span class="icon-container">
-                    <svg class="icon icon--primary">
-                           <use href="images/sprite.svg#clock"></use>-->
-                </svg>
-                </span>
-
-
     </section>
-    <div class="footer__brand">
-        <img src="images/OIP.jpg" alt="" />
-        <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
-    </div>
-    </div>
-    </footer>
+    <div id="footer"></div>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
