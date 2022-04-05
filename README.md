@@ -19,4 +19,4 @@
 - I nostri superpoteri
 - Il Normalize.css
 - Il template Moshify
-- Il Cookie Notice Js
+- Il Cookie Notice Js di Alessandro Benoit
