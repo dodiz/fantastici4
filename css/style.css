@@ -994,3 +994,7 @@ a {
 details {
   color: black;
 }
+
+summary:hover{
+  color:#00d9ff
+}
